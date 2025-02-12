@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/EasePack.min.js'></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="sub">
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">비전</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">R&D</a></li>
+                        </ul>
+                    </li><!--회사소개-->
+                    <li>
+                        <a href="#">제품소개</a>
+                        <ul class="sub">
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li><!--제품소개-->
+                    <li>
+                        <a href="#">주문제작</a>
+                        <ul class="sub">
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li><!--주문제작-->
+                    <li>
+                        <a href="#">레터링주얼리</a>
+                        <ul class="sub">
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li><!--레터링주얼리-->
+                    <li>
+                        <a href="#">컨셉별디자인</a>
+                        <ul class="sub">
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li><!--컨셉별디자인-->
+                </ul>
+            </nav>
+            <div class="search-box flex">
+                <input type="text" name="search" placeholder="검색어를 입력해 주세요.">
+                <span><img src="img/search.png" alt="search"></span>
+              </div> <!-- search-box -->
+              <div class="popular flex" >
+                <p class="fs12" style="margin-left:15px;">인기검색어</p>
+                <div class="popular-word flex">
+                  <div class="scrolling-words">
+                    <ul>
+                      <li><a href="#"><b>1</b>&nbsp;&nbsp;text 1</a></li>
+                      <li><a href="#"><b>2</b>&nbsp;&nbsp;text 2</a></li>
+                      <li><a href="#"><b>3</b>&nbsp;&nbsp;text 3</a></li>
+                      <li><a href="#"><b>4</b>&nbsp;&nbsp;text 4</a></li>
+                      <li><a href="#"><b>5</b>&nbsp;&nbsp;text 5</a></li>
+                      <li><a href="#"><b>6</b>&nbsp;&nbsp;text 6</a></li>
+                      <li><a href="#"><b>7</b>&nbsp;&nbsp;text 7</a></li>
+                      <li><a href="#"><b>8</b>&nbsp;&nbsp;text 8</a></li>
+                      <li><a href="#"><b>9</b>&nbsp;&nbsp;text 9</a></li>
+                      <li><a href="#"><b>10</b>&nbsp;&nbsp;text 10</a></li>
+                    </ul>
+                  </div>
+                  <span><img src="img/arrow_down.png" ALT="화살표"></span>
+                </div> <!-- popular-word -->
+              </div> <!-- popular -->
+            <div class="menu-area flex">
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/login.png" alt="login">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/member.png" alt="member">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/cart.png" alt="cart">
+                        </a></li>
+                    </ul>
+                </div><!--top-menu-->
+            </div>
+        </header>
+        <section class="s1">
+            <div class="main-slide">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex">
+                            <div class="slide-bg slide-bg1"></div>
+                            <div class="slide-img slide-img1"></div>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex">
+                            <div class="slide-bg slide-bg2"></div>
+                            <div class="slide-img slide-img2"></div>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex">
+                            <div class="slide-bg slide-bg3"></div>
+                            <div class="slide-img slide-img3"></div>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex">
+                            <div class="slide-bg slide-bg4"></div>
+                            <div class="slide-img slide-img4"></div>
+                        </div> <!-- swiper-slide -->
+                    </div> <!-- swiper-wrapper -->
+                </div> <!-- swiper -->
+            </div> <!-- main-slide -->
+            <div class="main-slide-txt">
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex2">
+                            <h2 style="color: #45ad6f;">Accessory<br>악세서리의 모든 것</h2>
+                            <p>#나의 n번째 소중한 추억<br>#반지, 목걸이, 귀걸이, 팔찌 무엇이든</p>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex2">
+                            <h2 style="color: #FB9AD1;">고객님께<br>항상 보답드리는</h2>
+                            <p>#맞춤형 악세서리 제작 서비스</p>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex2">
+                            <h2 style="color:#f2d4ff">매달 탄생석으로<br>기념일을 만드세요!</h2>
+                            <p>#2월 자수정 특가 sale</p>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide flex2">
+                            <h2 style="color: #e8eb34;">이달의 한정<br>악세서리들을 만나 보세요!</h2>
+                            <p>#푸른 보석같은 사파이어</p>
+                        </div> <!-- swiper-slide -->
+                    </div> <!-- swiper-wrapper -->
+                </div> <!-- swiper -->
+            </div> <!-- main-slide -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="s2">
+            <div class="center-box">
+                <h2>추천 상품👍</h2>
+                <p>이번주 주목해야 하는 상품</p>
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="img/slide/s2img1.png" alt="s2슬라이드">
+                            </div><!--swiper-slide-img-->
+                            <div class="text-area">
+                                <p style="color:green; font-size:18px; font-weight:bold;">반지</p>
+                                <h3 style="font-weight:bold; margin-top: 15px;"></h3>푸른빛이 감도는 다이아몬드와 황금빛 24k의<br>환상적인 만남!</h3>
+                                <div class="swiper-slide-txt flex" style="padding-bottom:15px;">
+                                    <p style="font-size:15px; color:#999;">#다이아몬드 #이달의 특가</p>
+                                    <p style="font-size:15px; color:#999; margin-left:90px;">상품문의</p>
+                                </div>
+                                <div class="text-area-price">
+                                    <p style="margin-left: 20px;">999999원 ~</p>
+                                    <p style="margin-left: 80px; margin-bottom: 10px;">구매하기</p>
+                                </div><!--text-area-price-->
+                            </div><!--text-area-->
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="img/slide/s2img2.jpg" alt="s2슬라이드">
+                            </div><!--swiper-slide-img-->
+                            <div class="text-area">
+                                <p style="color:green; font-size:18px; font-weight:bold;">반지</p>
+                                <h3 style="font-weight:bold; margin-top: 15px;"></h3>다이아몬드에 절대 굴하지 않는 토파즈의<br>황홀한 황금빛 아름다움!</h3>
+                                <div class="swiper-slide-txt flex" style="padding-bottom:15px;">
+                                    <p style="font-size:15px; color:#999;">#토파즈 #이달의 특가</p>
+                                    <p style="font-size:15px; color:#999; margin-left:120px;">상품문의</p>
+                                </div>
+                                <div class="text-area-price">
+                                    <p style="margin-left: 20px;">999999원 ~</p>
+                                    <p style="margin-left: 80px; margin-bottom: 10px;">구매하기</p>
+                                </div><!--text-area-price-->
+                            </div><!--text-area-->
+                        </div><!-- swiper-slide -->
+                        
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="img/slide/s2img3.jpg" alt="s2슬라이드">
+                            </div><!--swiper-slide-img-->
+                            <div class="text-area">
+                                <p style="color:green; font-size:18px; font-weight:bold;">맞춤제작 악세서리</p>
+                                <h3 style="font-weight:bold; margin-top: 15px;"></h3>고객님의 마음처럼 투명한 다이아몬드는 어떠신가요?<br>다이아몬드 악세서리 맞춤제작 서비스!</h3>
+                                <div class="swiper-slide-txt flex" style="padding-bottom:15px;">
+                                    <p style="font-size:15px; color:#999;">#다이아몬드 #맞춤제작</p>
+                                    <p style="font-size:15px; color:#999; margin-left:110px;">제작/상품문의</p>
+                                </div>
+                                <div class="text-area-price">
+                                    <p style="margin-left: 20px;">999999원 ~</p>
+                                    <p style="margin-left: 80px; margin-bottom: 10px;">구매하기</p>
+                                </div><!--text-area-price-->
+                            </div><!--text-area-->
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="img/slide/s2img4.jpg" alt="s2슬라이드">
+                            </div><!--swiper-slide-img-->
+                            <div class="text-area">
+                                <p style="color:green; font-size:18px; font-weight:bold;">맞춤제작 악세서리</p>
+                                <h3 style="font-weight:bold; margin-top: 15px;"></h3>푸른빛이 감도는 사파이어와 함께 이번번 여름에는<br>바다로 떠나 보아요!</h3>
+                                <div class="swiper-slide-txt flex" style="padding-bottom:15px;">
+                                    <p style="font-size:15px; color:#999;">#사파이어 #맞춤제작 #여행권 증정</p>
+                                    <p style="font-size:15px; color:#999; margin-left:32px;">제작/상품문의</p>
+                                </div>
+                                <div class="text-area-price">
+                                    <p style="margin-left: 20px;">999999원 ~</p>
+                                    <p style="margin-left: 80px; margin-bottom: 10px;">구매하기</p>
+                                </div><!--text-area-price-->
+                            </div><!--text-area-->
+                        </div><!-- swiper-slide -->
+                    </div><!--swiper-wrapper-->
+                </div><!--swiper3-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><!-- center-box -->
+        </section><!--s2-->
+        <section class="s3">
+            <div class="center-box">
+                <h2 style="color: green; font-weight:bold;">모든순간 두근두근</h2>
+                <h2>프리모에서 만나보는 최신정보</h2>
+                <div class="flex">
+                    <div class="mega-sale">
+                        <div class="swiper swiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="img/slide/s3img1.png" alt="s3슬라이드">
+                                    </div>
+                                    <div class="text-area">
+                                        <h3 style="margin-top: 20px; font-weight: bold;">세상에 하나뿐인 오팔 목걸이를 이 가격에!</h3>
+                                    </div>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="img/slide/s3img2.jpg" alt="s3슬라이드">
+                                    </div>
+                                    <div class="text-area">
+                                        <h3 style="margin-top: 20px; font-weight: bold;">세상에 하나뿐인 오팔 목걸이를 이 가격에!</h3>
+                                    </div>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="img/slide/s3img3.jpg" alt="s3슬라이드">
+                                    </div>
+                                    <div class="text-area">
+                                        <h3 style="margin-top: 20px; font-weight: bold;">세상에 하나뿐인 오팔 목걸이를 이 가격에!</h3>
+                                    </div>
+                                </div><!--swiper-slide-->
+                            </div><!--swiper-wrapper-->
+                        </div><!--swiper4-->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div><!--maga-sale-->
+                    <div class="notice" style="border:1px solid #999; border-radius:10px; margin-bottom: 20px;">
+                        <h3 style="margin-top: 10px; text-align:center; color:green; font-weight:bold;">공지사항</h3>
+                        <div class="notice-box flex2">
+                            <table class="table" style="margin-top: 15px; margin-bottom: 15px;">
+                                <tr>
+                                    <td>
+                                        <b class="flex">
+                                            <a href="#">TSK 본인 확인 서비스 관련 공지</a>
+                                            <span style="font-weight: normal;">2024.12.12</span>
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b class="flex">
+                                            <a href="#">프리맴버스 결제 제휴 서비스 오픈 안내</a>
+                                            <span  style="font-weight: normal;">2024.12.12</span>
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b class="flex">
+                                            <a href="#">프리페이 결제 이벤트 "1% 즉시할인" 시행 안내</a>
+                                            <span  style="font-weight: normal;">2024.12.12</span>
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b class="flex">
+                                            <a href="#">개인정보처리방침 변경 안내<2024.07.26></a>
+                                            <span  style="font-weight: normal;">2024.07.26</span>
+                                        </b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!--notice-box-->
+                    </div><!-- notice -->
+                </div><!--flex-->
+            </div>
+        </section><!--s3-->
+        <section class="s4">
+            <div class="center-box">
+                <h2>⏰M타임딜</h2>
+                <p>기간한정 특가찬스! 망설이면 늦어요!</p>
+                <div class="time-deal flex">
+                    <a href="#" class="flex">
+                        <div class="time-deal-photo">
+                            <img src="img/slide/timedeal.jpg" alt="timedeal">
+                        </div>
+                        <div class="time-deal-txt">
+                            <div class="d-day" id="d-day">
+                            </div>
+                            <div class="d-day-txt">
+                                <h3 style="color:green;">프랑스 왕실의 사파이어 팬던트가 그대의 손에!</h3>
+                                <span>#프랑스 #마리앙투아네트 #왕가의 보석 #루이 16세 #프랑스 역사<br>#협회 인증</span><br>
+                                <span style="margin-top: 10px;">메가세일 즉시할인 30만원+쿠폰할인 70만원+카드할인까지</span>
+                                <h3 style="font-weight:bold; margin-right: 25px; margin-top: 30px;">특가 100,469,900원 부터 ~</h3>
+                            </div> <!-- d-day-text -->
+                        </div> <!-- time-deal-txt -->
+                    </a>
+                </div><!--time-deal-->
+                <div class="time-deal-swiper">
+                    <div class="swiper swiper5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex">
+                                <div class="swiper-slide-img">
+                                    <img src="img/slide/s4img1.jpg" alt="s4슬라이드">
+                                </div>
+                                <div class="text-area">
+                                    <p style="font-size: 15px; color: #fff; background-color: #f172bd; border-radius: 20px; width:60px; text-align: center;">D-3</p>
+                                    <h3 style="font-size: 18px; font-weight: bold;">온갖 보석을 내 취향대로!<br>맞춤 보석 제작 특가!</h3>
+                                    <p>특가 400,000원부터</p>
+                                </div>
+                            </div><!--swiper-slide-->
+                            <div class="swiper-slide flex">
+                                <div class="swiper-slide-img">
+                                    <img src="img/slide/s4img2.jpg" alt="s4슬라이드">
+                                </div>
+                                <div class="text-area">
+                                    <p style="font-size: 15px; color: #fff; background-color: #f172bd; border-radius: 20px; width:60px; text-align: center;">D-3</p>
+                                    <h3 style="font-size: 18px; font-weight: bold;">에메랄드를 내 취향대로!<br>맞춤 보석 제작 특가!</h3>
+                                    <p>특가 400,000원부터</p>
+                                </div>
+                            </div><!--swiper-slide-->
+                            <div class="swiper-slide flex">
+                                <div class="swiper-slide-img">
+                                    <img src="img/slide/s4img3.jpg" alt="s4슬라이드">
+                                </div>
+                                <div class="text-area">
+                                    <p style="font-size: 15px; color: #fff; background-color: #f172bd; border-radius: 20px; width:60px; text-align: center;">D-3</p>
+                                    <h3 style="font-size: 18px; font-weight: bold;">자수정을 내 취향대로!<br>맞춤 보석 제작 특가!</h3>
+                                    <p>특가 400,000원부터</p>
+                                </div>
+                            </div><!--swiper-slide-->
+                            <div class="swiper-slide flex">
+                                <div class="swiper-slide-img">
+                                    <img src="img/slide/s4img4.jpg" alt="s4슬라이드">
+                                </div>
+                                <div class="text-area">
+                                    <p style="font-size: 15px; color: #fff; background-color: #f172bd; border-radius: 20px; width:60px; text-align: center;">D-3</p>
+                                    <h3 style="font-size: 18px; font-weight: bold;">토파즈를 내 취향대로!<br>맞춤 보석 제작 특가!</h3>
+                                    <p>특가 400,000원부터</p>
+                                </div>
+                            </div><!--swiper-slide-->
+                            <div class="swiper-slide flex">
+                                <div class="swiper-slide-img">
+                                    <img src="img/slide/s4img5.jpg" alt="s4슬라이드">
+                                </div>
+                                <div class="text-area">
+                                    <p style="font-size: 15px; color: #fff; background-color: #f172bd; border-radius: 20px; width:60px; text-align: center;">D-3</p>
+                                    <h3 style="font-size: 18px; font-weight: bold;">다이아몬드를 내 취향대로!<br>맞춤 보석 제작 특가!</h3>
+                                    <p>특가 400,000원부터</p>
+                                </div>
+                            </div><!--swiper-slide-->
+                        </div><!-- swiper-wrapper -->
+                    </div><!-- swiper swiper4 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div><!-- time-deal-swiper -->
+                <div class="view-more">
+                    <div class="view-more-btn">
+                        <a href="#"><p>전체보기</p></a>
+                    </div>
+                </div>
+            </div><!--center-box-->
+        </section>
+        <section class="s5">
+            <div class="center-box">
+                <h2>📺️홈쇼핑 HIT 상품</h2>
+                <div class="home-shopping">
+                    <div class="shop">
+                        <div class="shop-img">
+                            <img src="img/slide/s5img2.jpg" alt="s5이미지">
+                        </div>
+                        <div class="hover">
+                            <a href="#">
+                                <h3>큐빅으로 저렴하게 만나보세요!</h3>
+                                <p>10,000원 부터 ~</p>
+                            </a>
+                        </div><!--hover-->
+                    </div><!--shop-->
+                    <div class="shop">
+                        <div class="shop-img">
+                            <img src="img/slide/s5img1.jpg" alt="s5이미지">
+                        </div>
+                        <div class="hover">
+                            <a href="#">
+                                <h3>재사용 반지를 찾아 주세요!</h3>
+                                <p>100,000원 부터 ~</p>
+                            </a>
+                        </div><!--hover-->
+                    </div><!--shop-->
+                    <div class="shop">
+                        <div class="shop-img">
+                            <img src="img/slide/s5img3.jpg" alt="s5이미지">
+                        </div>
+                        <div class="hover">
+                            <a href="#">
+                                <h3>당신의 다이아몬드는?</h3>
+                                <p>1,000,000원 부터 ~</p>
+                            </a>
+                        </div><!--hover-->
+                    </div><!--shop-->
+                    <div class="shop">
+                        <div class="shop-img">
+                            <img src="img/slide/s5img4.jpg" alt="s5이미지">
+                        </div>
+                        <div class="hover">
+                            <a href="#">
+                                <h3>소중한 추억을 만들어 주세요!</h3>
+                                <p>400,000원 부터 ~</p>
+                            </a>
+                        </div><!--hover-->
+                    </div><!--shop-->
+                    <div class="shop">
+                        <div class="shop-img">
+                            <img src="img/slide/s5img5.jpg" alt="s5이미지">
+                        </div>
+                        <div class="hover">
+                            <a href="#">
+                                <h3>주인 없는 보석의 주인이 되어 주세요!</h3>
+                                <p>200,000원 부터 ~</p>
+                            </a>
+                        </div><!--hover-->
+                    </div><!--shop-->
+                </div><!--home-shopping-->
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center-box">
+                <div class="container flex">
+                    <div class="logo-icon">
+                        <img src="img/logo1.png" alt="logoi">
+                    </div>
+                    <p>실시간으로 업데이트되는 프리모의 최신소식</p>
+                    <a href="#">팔로우하기 +</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="info">
+                <div class="center-box flex">
+                    <div class="info-box">
+                        <ul class="flex">
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="#">대리점개설문의</a>
+                            </li>
+                        </ul>
+                    </div> <!-- info-box -->
+                    <div class="family">
+                        <a href="#" class="flex">
+                            <p>패밀리 사이트</p>
+                            <span><img src="img/arrow_down.png" alt="화살표"></span>
+                        </a>
+                        <div class="family-list">
+                            <a href="#">family-list</a>
+                            <a href="#">family-list</a>
+                            <a href="#">family-list</a>
+                            <a href="#">family-list</a>
+                        </div> <!-- family-list -->
+                    </div> <!-- family -->
+                </div> <!-- center-box -->
+            </div> <!-- info -->
+            <div class="addr">
+                <div class="center-box flex">
+                    <address>
+                        (주)프리모 네트워크 | 대표이사 이율 | 사업자등록번호 123-45-67891 | 통신판매업신고번호 계양구 제01000호 | 호스팅 업체 (주)프리모 네트워크<br>
+                        대한보석 사업자 등록번호 2024-11(인천광역시 계양구) |
+                        상담문의 1544-5282 | 팩스 032-1234-1234 | 주소 인천광역시 계양구 계양대로 119번길 8<br><br><br>
+                    </address>
+                    <div class="sns">
+                        <ul class="flex">
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon-facebook.svg" alt="페북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon-instagram.svg" alt="인스타">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon-youtube.svg" alt="유튜브">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    Copyright ⓒ PRIMO . All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div><!--wrap-->
+    <script type="text/javascript">
+        let targetDate = new Date("12 25, 2025 24:00:00").getTime();
+        //1초마다 함수 생성, 실행
+        let x = setInterval(function(){
+          //현재 날짜 구하기
+          let now = new Date().getTime();
+          //타겟 날짜에서 현재 날짜를 뺀 시간 구하기
+          let distance = targetDate - now;
+          //각 변수에 일,시,분,초를 등록
+          let day = Math.floor(distance / (1000 * 60 * 60 * 24));
+          let hour = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+          let minute = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+          let second = Math.floor(distance % (1000 * 60) / (1000));
+
+          //만약 day가 0이면 "당일"임
+          day = day === 0 ? "당일" : day.toString().padStart(2, "0");
+          hour = hour.toString().padStart(2, "0");
+          minute = minute.toString().padStart(2, "0");
+          second = second.toString().padStart(2, "0");
+
+          //화면에 표시
+          document.getElementById("d-day").innerHTML = "<b>" + day + "</b>일 <b>" + hour + " : " + minute + " : " + second + "</b> 남았습니다.";
+        });
+    </script>
+</body>
+</html>
